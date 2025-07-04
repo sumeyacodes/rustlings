@@ -1,13 +1,16 @@
+// so rust infers that identifier is an integer from the second set of if statements below.
+// if you try to return anything but an integer it will cause compile error because it is not compatible.
+
 fn animal_habitat(animal: &str) -> &str {
     // TODO: Fix the compiler error in the statement below.
     let identifier = if animal == "crab" {
         1
     } else if animal == "gopher" {
-        2.0
+        2
     } else if animal == "snake" {
         3
     } else {
-        "Unknown"
+        0
     };
 
     // Don't change the expression below!
